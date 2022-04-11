@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  web:
+    build: .
+    volumes:
+      - "./app:/usr/src/app"
+      - /usr/src/app/node_modules
+    environment:
+      - TELEGRAM_TOKEN=${5112384476:AAFCNbqvL4UcYSXBY1oAyuWAaVhW6MVkxtU}
+      - TELEGRAM_CHAT_ID=${1587341570}
+      - FB_EMAIL=${isamwise@gmail.com}
+      - FB_PASSWORD=${FHKC-sV6Cq7UilG}
